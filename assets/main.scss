@@ -1,0 +1,88 @@
+@import '~bulma/sass/utilities/_all';
+// @import '~bulma/sass/utilities/derived-variables';
+// @import '~bulma/sass/utilities/functions';
+// @import '~bulma/bulma';
+// @import "~bulma/sass/utilities/_all";
+$primary: hsl(141, 60%, 40%);
+// $primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$primary-light:hsl(138, 100%, 79%);
+$primary-light-invert: findColorInvert($primary-light);
+$primary-light-1:hsl(136, 80%, 84%);
+$primary-dark:hsl(120, 33%, 1%);
+$primary-dark-invert: findColorInvert($primary-dark);
+$primary-dark1:hsl(137, 54%, 5%);
+$primary-dark1-invert: findColorInvert($primary-dark1);
+$twitter-invert: findColorInvert($twitter);
+$purple:rgb(121, 87, 213);
+$purple-invert: findColorInvert($purple);
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+// $primary-light-1, $primary-dark,
+$colors: ("primary-dark1":($primary-dark1, $primary-dark1-invert), "primary-dark":($primary-dark, $primary-dark-invert), "primary-light":($primary-light-1, $primary-light-invert), "white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert), "twitter": ($twitter, $twitter-invert), "purple": ($purple, $purple-invert));
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Poppins Thin'), local('Poppins-Thin'), url("./fonts/PoppinsThin.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), local('Poppins-Light'), url("./fonts/PoppinsLight.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url("./fonts/PoppinsRegular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'), url("./fonts/PoppinsMedium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url("./fonts/PoppinsSemiBold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'), url("./fonts/PoppinsBold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'), url("./fonts/PoppinsExtraBold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Poppins Black'), local('Poppins-Black'), url("./fonts/PoppinsBlack.woff2") format('woff2');
+}
+
+$family-primary:Poppins;
+// $family-secondary:Raleway;
+// Links
+// $link: $primary;
+// $link-invert: $primary-invert;
+// $link-focus-border: $primary;
+$sidebar-box-shadow: 0px;
+$sidebar-background:$primary-light;
+$radio-active-background-color:$twitter;
+@import '~bulma';
+@import "~buefy/src/scss/buefy";
